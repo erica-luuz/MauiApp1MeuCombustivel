@@ -18,15 +18,17 @@ namespace MauiApp1MeuCombustivel
 
                 double etanol = Convert.ToDouble(txt_etanol.Text);
                 double gasolina = Convert.ToDouble(txt_gasolina.Text);
+                string marca = txt_marca_veiculo.Text;
+                string modelo = txt_modelo_veiculo.Text;
 
                 string msg = "";
 
                 if (etanol <= (gasolina * 0.7))
                 {
-                    msg = "O Etanol está compensando.";
+                    msg = "O Etanol está compensando para o seu " + marca + " e " + modelo;
                 }else
                 {
-                    msg = "A gasolina esta compensando";
+                    msg = "A gasolina esta compensando para o seu " + marca + " e " + modelo;
                 }
 
                 DisplayAlert("Calculado", msg, "OK");

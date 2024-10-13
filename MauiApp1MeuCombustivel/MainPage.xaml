@@ -13,6 +13,12 @@
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
+            <Label Text="Insira a Marca do seu Veiculo:" />
+            <Entry x:Name="txt_marca_veiculo" Placeholder="Marca do Veiculo" />
+
+            <Label Text="Insira o Modelo do seu Veiculo:" />
+            <Entry x:Name="txt_modelo_veiculo" Placeholder="Modelo do Veiculo" />
+
             <Label Text="Preço do Etanol:" />
             <Entry x:Name="txt_etanol" Placeholder="R$ " />
 
